@@ -1,0 +1,24 @@
+{
+  "name": "reg-new-student-script",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+<<<<<<< HEAD
+    "axios": "^1.6.8"
+=======
+    "axios": "^1.6.8",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "nodemailer": "^6.9.13"
+>>>>>>> 37df040 (update logic, security etc.)
+  }
+}
