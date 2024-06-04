@@ -33,7 +33,7 @@ function parseCsv(filePath) {
 }
 
 async function main() {
-  const filePath = 'users.csv';
+  const filePath = 'students.csv';
   try {
     const users = await parseCsv(filePath);
     return users;

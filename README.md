@@ -1,22 +1,16 @@
-# Скрипт по созданию студентов в keycloak и отправки письма им на почту
+# Скрипт по регистрации студентов в keycloak, lms и отправки письма им на почту
+
+## Описание
+
+1. Скрипт получает данные студентов из amoCRM по токену и формирует csv документ в корне проекта.
+2. Скрипт парсит csv документ с данными студентов и регистрирует их в keycloak.
+3. Скрипт отправляет письмо на почту студента со ссылкой.
 
 ## Требования
 
 1. Nodejs
 2. npm
 3. Makefile
-
-## Инструкция
-
-Создаем в корневой директории **users.csv**, и запускаем скрипт.
-
-### Пример CSV
-
-```csv
-username,firstName,lastName,email,enabled,credential_type,credential_value,credential_temporary
-testStudent,test,student,example_mail1@gmail.com,true,password,example_mail1,false
-testStudent2,test2,student2,example_mail2@gmail.com,true,password,example_mail2,false
-```
 
 ## Запуск и установка
 

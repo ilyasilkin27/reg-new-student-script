@@ -18,7 +18,8 @@ export default async (users) => {
             const response = await axios.post(url, user, { headers });
             console.log('Пользователь успешно создан:', response.config.data);
         } catch (error) {
-            console.error('Ошибка при создании пользователя:', error);
+            console.error('Ошибка при создании пользователя:', error.response.data.errorMessage
+        );
         }
     }
 };
