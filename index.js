@@ -7,5 +7,5 @@ import getUsers from './src/getUsers.js';
     await getUsers(); // Получаем данные студентов из AMOCRM и создаем csv документ
     const userData = await main(); // Парсим csv документ
     await createUser(userData); // Создаем юзерна в keycloak
-    // await sendMail(userData); // Отправляем письмо на почту студенту
+    await sendMail(userData); // Отправляем письмо на почту студенту
 })();
